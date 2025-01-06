@@ -181,7 +181,7 @@ The MipNeRF360 scenes are hosted by the paper authors [here](https://jonbarron.i
 ### Evaluation
 By default, the trained models use all available images in the dataset. To train them while withholding a test set for evaluation, use the ```--eval``` flag. This way, you can render training/test sets and produce error metrics as follows:
 ```shell
-python train.py -s <path to COLMAP or NeRF Synthetic dataset> --eval # Train with train/test split
+python train.py -s <path to COLMAP or NeRF Synthetic dataset> -m <output path>--eval # Train with train/test split
 python render.py -m <path to trained model> # Generate renderings
 python metrics.py -m <path to trained model> # Compute error metrics on renderings
 ```
