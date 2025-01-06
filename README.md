@@ -268,6 +268,8 @@ python full_eval.py -m <directory with evaluation images>/garden ... --skip_trai
 ## Interactive Viewers
 We provide two interactive viewers for our method: remote and real-time. Our viewing solutions are based on the [SIBR](https://sibr.gitlabpages.inria.fr/) framework, developed by the GRAPHDECO group for several novel-view synthesis projects.
 
+sibr配置参见hierarchical 3d gaussian splatting
+
 ### Hardware Requirements
 - OpenGL 4.5-ready GPU and drivers (or latest MESA software)
 - 4 GB VRAM recommended
