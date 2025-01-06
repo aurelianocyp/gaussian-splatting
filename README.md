@@ -367,6 +367,8 @@ After extracting or installing the viewers, you may run the compiled ```SIBR_gau
 ./<SIBR install dir>/bin/SIBR_gaussianViewer_app -m <path to trained model>
 ```
 
+```W, A, S, D, Q, E``` for camera translation and ```I, K, J, L, U, O```for rotation用于控制视角
+
 It should suffice to provide the ```-m``` parameter pointing to a trained model directory. Alternatively, you can specify an override location for training input data using ```-s```. To use a specific resolution other than the auto-chosen one, specify ```--rendering-size <width> <height>```. Combine it with ```--force-aspect-ratio``` if you want the exact resolution and don't mind image distortion. 
 
 **To unlock the full frame rate, please disable V-Sync on your machine and also in the application (Menu &rarr; Display). In a multi-GPU system (e.g., laptop) your OpenGL/Display GPU should be the same as your CUDA GPU (e.g., by setting the application's GPU preference on Windows, see below) for maximum performance.**
