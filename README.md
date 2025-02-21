@@ -309,6 +309,8 @@ cmake --build build -j24 --target install
 
 用这个cmake，报错参考h3dgs
 
+如果cmake版本过低，在自己的环境配一个高版本的camke就行。如果没有opencv4.5.0，在本机低版本的配一个opencv4.5.0就行
+
 #### Ubuntu 20.04
 Backwards compatibility with Focal Fossa is not fully tested, but building SIBR with CMake should still work after invoking
 ```shell
