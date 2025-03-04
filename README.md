@@ -71,6 +71,8 @@ SET DISTUTILS_USE_SDK=1 # Windows only
 conda env create --file environment.yml
 conda activate gaussian_splatting
 ```
+先把三个submodule注释掉create，然后pip install mkl==2024.0.0，然后再进入各自submodule进行pip install .
+
 Please note that this process assumes that you have CUDA SDK **11** installed, not **12**. For modifications, see below.
 
 Tip: Downloading packages and creating a new environment with Conda can require a significant amount of disk space. By default, Conda will use the main system hard drive. You can avoid this by specifying a different package download location and an environment on a different drive:
